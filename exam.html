@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discografia</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
+
+    <style>
+        html,
+        body,
+        .container {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        #navMenu {
+            top: 80px;
+            left: 50px;
+            width: 140px;
+            height: 140px;
+            z-index: 100;
+            background: linear-gradient(90deg, #0c45e0, #388ad6, #54abf3);
+            -webkit-background: linear-gradient(90deg, #0c45e0, #0c45e0, #0c45e0);
+            background-size: 400% 400%;
+            -webkit-background-size: 400% 400%;
+            animation: gradient 3s infinite;
+            -webkit-animation: gradient 3s infinite;
+        }
+
+        #navMenu:hover,
+        .nav:hover {
+            background: #fa069c;
+        }
+
+        @keyframes gradient {
+            50% {
+                background-position: 100% 0;
+            }
+        }
+
+        @-webkit-keyframes gradient {
+            50% {
+                background-position: 100% 0;
+            }
+        }
+
+        .diamond {
+            position: absolute;
+            width: 67.5px;
+            height: 67.5px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            background: #0c45e0;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 1px 4px 10px #101010;
+        }
+
+        .diamond:active {
+            background: #710b9e;
+            box-shadow: 0px 1px 2.5px #101010;
+            transition: 0.1s;
+            -webkit-transition: 0.1s;
+        }
+
+        /*.popUp{
+  text-align:center;
+  border-radius:10px 0px;
+  position:absolute;
+  top:100px;
+  left:330px;
+  overflow:hidden;
+  background:red;
+  width:0px;
+  max-width:100px;
+}
+
+.#nav1:hover + .popUp{
+  width:100px;
+}*/
+
+        .nav {
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+        }
+
+        .nav01 {
+            top: 15px;
+            left: 135px;
+        }
+
+        .nav2 {
+            top: 65px;
+            left: 185px;
+        }
+
+        .nav4 {
+            top: 115px;
+            left: 235px;
+        }
+
+        .small {
+            top: 100px;
+            left: 100px;
+            z-index: 10;
+            background: #643fc1;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+        }
+
+        .rotCorrect {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            margin-left: 14px;
+            margin-top: 8px;
+        }
+
+        #mainRotCorrect {
+            margin-left: 26px;
+            margin-top: 28px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            max-width: 90px;
+        }
+
+        i {
+            color: #EEEEEE;
+        }
+    </style>
+</head>
+<!--//Primer Diamante-->
+
+<style>
+    html,
+    body,
+    .container1 {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    #navMenu1 {
+        top: 400px;
+        left: 50px;
+        width: 140px;
+        height: 140px;
+        z-index: 100;
+        background: linear-gradient(90deg, #0c45e0, #388ad6, #54abf3);
+        -webkit-background: linear-gradient(90deg, #0c45e0, #0c45e0, #0c45e0);
+        background-size: 400% 400%;
+        -webkit-background-size: 400% 400%;
+        animation: gradient 3s infinite;
+        -webkit-animation: gradient 3s infinite;
+    }
+
+    #navMenu1:hover,
+    .nav1:hover {
+        background: #fa069c;
+    }
+
+    @keyframes gradient {
+        50% {
+            background-position: 100% 0;
+        }
+    }
+
+    @-webkit-keyframes gradient {
+        50% {
+            background-position: 100% 0;
+        }
+    }
+
+    .diamond1 {
+        position: absolute;
+        width: 67.5px;
+        height: 67.5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        background: #0c45e0;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 1px 4px 10px #101010;
+    }
+
+    .diamond1:active {
+        background: #710b9e;
+        box-shadow: 0px 1px 2.5px #101010;
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+    }
+
+    /*.popUp{
+text-align:center;
+border-radius:10px 0px;
+position:absolute;
+top:100px;
+left:330px;
+overflow:hidden;
+background:red;
+width:0px;
+max-width:100px;
+}
+
+.#nav1:hover + .popUp{
+width:100px;
+}*/
+
+    .nav1 {
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+    }
+
+    .nav11 {
+        top: 335px;
+        left: 135px;
+    }
+
+    .nav21 {
+        top: 385px;
+        left: 185px;
+    }
+
+    .nav31 {
+        top: 435px;
+        left: 235px;
+    }
+
+    .nav41 {
+        top: 485px;
+        left: 185px;
+    }
+
+    .small1 {
+        top: 400px;
+        left: 90px;
+        z-index: 10;
+        background: #643fc1;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+    }
+
+    .rotCorrect1 {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin-left: 14px;
+        margin-top: 8px;
+    }
+
+    #mainRotCorrect1 {
+        margin-left: 26px;
+        margin-top: 28px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        max-width: 90px;
+    }
+
+    #mostrar {
+        color: white;
+    }
+
+    i {
+        color: #EEEEEE;
+    }
+</style>
+</head>
+<!--Segundo Diamante-->
+
+<body background="C:\Users\Itzel\OneDrive\Imágenes\Disco.JPG">
+
+    <div class="container">
+        <div id="navMenu" class="diamond">
+            <div id="mainRotCorrect" class="rotCorrect"><i aria-hidden="true">Ingresar</i></div>
+        </div>
+        <div id="nav1" class="nav nav01 diamond">'
+            <div class="rotCorrect" id="Bandas"><i aria-hidden="true">Bandas</i></div>
+        </div>
+        <!--<div class="popUp">Home</div>-->
+        <div id="nav2" class="nav nav2 diamond">'
+            <div class="rotCorrect" id="Album"><i aria-hidden="true">Albúm</i></div>
+        </div>
+        <div id="nav4" class="nav nav4 diamond">'
+            <div class="rotCorrect" id="Cancion"><i aria-hidden="true">Cancion</i></div>
+        </div>
+        
+        <center><div >
+                <table id="mostrar">
+                    <tr>
+                        <tbody id= "todo" style="margin-top: 5%;">
+                        
+                    </tbody>
+                    </tr>
+                </table>
+        </center>
+        </div>
+
+        <div class="container1">
+            <div id="navMenu1" class="diamond1">
+                <div id="mainRotCorrect1" class="rotCorrect1"><i aria-hidden="true">Mostrar</i></div>
+            </div>
+            <div id="nav11" class="nav1 nav11 diamond">
+                <div class="rotCorrect1" id="Informacion"><i aria-hidden="true">Informacion</i></div>
+            </div>
+            <!--<div class="popUp">Home</div>-->
+            <div id="nav21" class="nav1 nav21 diamond">
+                <div class="rotCorrect1" id="MAlbun"><i aria-hidden="true"> Album</i></div>
+            </div>
+            <div id="nav31" class="nav1 nav31 diamond">
+                <div class="rotCorrect1" id="MCancion"><i aria-hidden="true"> Cancion</i></div>
+            </div>
+            <div id="nav41" class="nav1 nav41 diamond">
+                <div class="rotCorrect1" id="Mtodo"><i aria-hidden="true"> Todo</i></div>
+            </div>
+
+            
+        </div>
+
+        
+    </div>
+
+</body>
+<script>
+    $(document).ready(function () {
+
+        var bandas = [];
+        var albunes = [];
+        var canciones = [];
+
+        $(document).ready(function () {
+        $("#navMenu").click(function () {
+            //$(".nav").toggleClass("small");
+            if ($(".nav").hasClass("small")) {
+                $(".nav").removeClass("small");
+            } else {
+                $(".nav").addClass("small");
+            }
+        });
+    });
+    $(document).ready(function () {
+        $("#navMenu1").click(function () {
+            //$(".nav").toggleClass("small");
+            if ($(".nav1").hasClass("small1")) {
+                $(".nav1").removeClass("small1");
+            } else {
+                $(".nav1").addClass("small1");
+            }
+        });
+    });
+    $(document).ready(function () {
+        $("#Bandas").click(function () {
+            let nombre = prompt("Ingrese el nombre de la banda");
+            let genero = prompt("Ingrese el genero de la banda");
+            let año = prompt("Ingrese el año de la banda");
+
+            let banda = {
+                nombre: nombre,
+                genero: genero,
+                año: año
+            };
+            bandas.push(banda);
+            console.log(bandas);
+
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Album").click(function () {
+            let nombre = prompt("Ingrese el nombre del album");
+            let banda = prompt("Ingrese elnombre de la banda");
+            let año = prompt("Ingrese el año del album");
+
+            let album = {
+                nombre: nombre,
+                banda: banda,
+                año: año
+            };
+            albunes.push(album);
+            console.log(album);
+
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Cancion").click(function () {
+            let nombre = prompt("Ingrese el nombre de la cancion");
+            let album = prompt("Ingrese el album de la cancion");
+            let duracion = prompt("Ingrese la duracion de la cancion");
+
+            let cancion = {
+                nombre: nombre,
+                album: album,
+                duracion: duracion
+            };
+            canciones.push(cancion);
+            console.log(cancion);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Informacion").click(function () {
+            $("#mostrar").empty();
+            
+            let mostrar = "";
+            for (let i = 0; i < bandas.length; i++) {
+                $("#mostrar").append("<tr> <td>" + "BANDA" + "</td> <td><td>" + "GENERO" + "</td></td><td><td>" + "AÑO" + "</td></td></tr>");
+                $("#mostrar").append("<tr> <td>" + bandas[i].nombre + "</td> <td><td>" + bandas[i].genero + "</td></td><td><td>" + bandas[i].año + "</td></td></tr>");
+            }
+            
+        });
+    });
+
+    $(document).ready(function () {
+        $("#MAlbun").click(function () {
+            $("#mostrar").empty();
+            let mostrar = "";
+            for (let i = 0; i < albunes.length; i++) {
+                $("#mostrar").append("<tr> <td>" + "ALBUM" + "</td><td> <td>" + "BANDA" + "</td></td><td><td>" + "AÑO" + "</td></td></tr>");
+                $("#mostrar").append("<tr> <td>" + albunes[i].nombre + "</td><td> <td>" + albunes[i].banda + "</td></td><td><td>" + albunes[i].año + "</td></td></tr>");
+            }
+            $("#mostrar").append(mostrar);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#MCancion").click(function () {
+            $("#mostrar").empty();
+            let mostrar = "";
+            for (let i = 0; i < canciones.length; i++) {
+                $("#mostrar").append("<tr> <td>" + "CANCION" + "</td> <td><td>" + "ALBUM" + "</td></td><td><td>" + "DURACION" + "</td></td></tr>");
+                $("#mostrar").append("<tr> <td>" + canciones[i].nombre + "</td> <td><td>" +canciones[i].album + "</td></td><td><td>" + canciones[i].duracion + "</td></td></tr>");
+           
+            }
+            $("#mostrar").append(mostrar);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#Mtodo").click(function () {
+            $("#mostrar").empty();
+            let mostrar = "";
+            for (let i = 0; i < canciones.length; i++) {
+                $("#mostrar").append("<tr> <td>" + "BANDA" + "</td> <td><td>" + "GENERO" + "</td></td><td><td>" + "AÑO" + "</td></td></tr>");
+                $("#mostrar").append("<tr> <td>" + bandas[i].nombre + "</td> <td><td>" + bandas[i].genero + "</td></td><td><td>" + bandas[i].año + "</td></td></tr>");
+            }
+            for (let i = 0; i < albunes.length; i++) {
+                $("#mostrar").append("<tr> <td>" + "ALBUM" + "</td><td> <td>" + "BANDA" + "</td></td><td><td>" + "AÑO" + "</td></td></tr>");
+                $("#mostrar").append("<tr> <td>" + albunes[i].nombre + "</td><td> <td>" + albunes[i].banda + "</td></td><td><td>" + albunes[i].año + "</td></td></tr>");
+            }
+            for (let i = 0; i < bandas.length; i++) {
+                $("#mostrar").append("<tr> <td>" + "CANCION" + "</td> <td><td>" + "ALBUM" + "</td></td><td><td>" + "DURACION" + "</td></td></tr>");
+                $("#mostrar").append("<tr> <td>" + canciones[i].nombre + "</td> <td><td>" +canciones[i].album + "</td></td><td><td>" + canciones[i].duracion + "</td></td></tr>");
+            }
+            $("#mostrar").append(mostrar);
+        });
+
+    });
+});
+
+</script>
+
+</html>
